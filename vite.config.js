@@ -6,11 +6,11 @@ module.exports = {
         include: ["lib-flexible/flexible"],
     },
     alias: {
-        "/@/": path.resolve(__dirname, "./src/components"),
+        "@": path.resolve("src"),
     },
     proxy: {
-        "/api": {
-            target: "http://www.baidu.com",
+        "/App": {
+            target: "http://ying.sxwf.top",
             changeOrigin: true,
         },
     },
